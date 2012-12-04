@@ -35,6 +35,12 @@ public class AdView extends TiUIView implements NendAdListener
             int spotId = TiConvert.toInt(d, "spotID");
             String nendId = TiConvert.toString(d, "nendID");
             nendAdView = new NendAdView(TiApplication.getInstance().getApplicationContext(), spotId, nendId);
+            
+            if (d.containsKeyAndNotNull("adBackgroundColor")){
+                Integer bgColor = TiConvert.toColor(d, "adBackgroundColor");
+                nendAdView.setBackgroundColor(bgColor);
+            }
+            
             nendAdView.setListener(this);
             nendAdView.setGravity(Gravity.CENTER);
             setNativeView(nendAdView);
