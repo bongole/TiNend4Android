@@ -18,25 +18,10 @@ import org.appcelerator.titanium.util.TiConfig;
 public class Tinend4androidModule extends KrollModule
 {
 
-	// Standard Debugging variables
-	public static int Spotid;
-	public static String Apikey;
-
-	// You can define constants with @Kroll.constant, for example:
-	// @Kroll.constant public static final String EXTERNAL_NAME = value;
-	
-	public Tinend4androidModule() {
-		super();
-	}
-
-	// Methods
-	@Kroll.method
-	public void setSpotid(int spotid){
-		Spotid = spotid;
-	}
-	// Methods
-	@Kroll.method
-	public void setApikey(String apikey){
-		Apikey = apikey;
-	}
+    // You can define constants with @Kroll.constant, for example:
+    // @Kroll.constant public static final String EXTERNAL_NAME = value;
+    
+    public Tinend4androidModule() {
+        super();
+    }
 }

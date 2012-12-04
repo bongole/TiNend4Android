@@ -15,4 +15,4 @@ name: tinend4android
 moduleid: tv.harukaze.ti.nend.android
 guid: 6f654c9e-7208-4a88-a158-883e918f3582
 platform: android
-minsdk: 2.0.3.v20120806151610
+minsdk: 2.1.4.GA
